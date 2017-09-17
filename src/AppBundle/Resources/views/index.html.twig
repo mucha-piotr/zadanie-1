@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Zadanie 1</title>
+</head>
+<body>
+    <p>
+        {{ form_start(form) }}
+        {{ form_widget(form) }}
+        <input type="submit" value="Zatwierdź"/>
+        {{ form_end(form) }}
+    </p>
+    <p>
+            {% for row in result %}
+                <p>{{ row }}</p>
+            {% else %}
+                <p>Zatwierdź formularz</p>
+            {% endfor %}
+    </p>
+</body>
+</html>
